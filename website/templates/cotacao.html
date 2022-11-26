@@ -4,20 +4,19 @@
 	<head>
     		<meta http-equiv="content-type" charset="utf-8"/>
         	<title>Cotação</title>
-        	<link rel="stylesheet" type="text/css" href="_CSS/estilo_geral.css"/>
+        	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/demo.css')}}"/>
     </head>
 <body>
     <div id="interface">
     	<header id="cabecalho">
-        	<img src="logo.png" />
+        	<img src="{{url_for('static', filename='images/logo.png')}}" />
         </header>
         <nav id="menu">
         	<ul>
-            	<li><p><a href="index.html">Home</a></p></li>
-                <li><p><a href="cotacao.html">Cotação</a></p></li>
-                <li><p><a href="quemsomos.html">Quem somos</a></p>
+            	<li><p><a href="/">Home</a></p></li>
+                <li><p><a href="/cotacao.html">Cotação</a></p></li>
+                <li><p><a href="/quemsomos.html">Quem somos</a></p>
                 </li>
-                <li><p><a href="contato.html">Contato</a></p></li>
 				<li><p><input type="search"></a> Busca</p></li>
                 
                

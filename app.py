@@ -1,15 +1,6 @@
-from website import create_app
+from website import create_app, render_template
 
-@app.route("/")
-def index():
-    return render_template("index.html")
-
-@app.route("/contato")
-def contato():
-    return render_template("contato.html")
-
-
-
+app = create_app()
 
 if __name__ == "__main__":
     app.run(debug=True)

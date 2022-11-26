@@ -4,23 +4,21 @@
 	<head>
     		<meta http-equiv="content-type" charset="utf-8"/>
         	<title>QUEM SOMOS</title>
-        	<link rel="stylesheet" type="text/css" href="_CSS/estilo_geral.css"/>
-            <link rel="stylesheet" type="text/css" href="_CSS1/estilo_geral.css"/>
+        	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/demo.css')}}"/>
 
          
     </head>
 <body>
     <div id="interface">
     	<header id="cabecalho">
-        	<img src="logo.png" />
+        	<img src="{{url_for('static', filename='logo.png')}}" />
         </header>
         <nav id="menu">
         	<ul>
-            	<li><p><a href="index.html">Home</a></p></li>
-                <li><p><a href="cotacao.html">Cotação</a></p></li>
-                <li><p><a href="quemsomos.html">Quem somos</a></p>
+            	<li><p><a href="/">Home</a></p></li>
+                <li><p><a href="/cotacao.html">Cotação</a></p></li>
+                <li><p><a href="/quemsomos.html">Quem somos</a></p>
                 </li>
-                <li><p><a href="contato.html">Contato</a></p></li>
 				<li><p><input type="search"></a> Busca</p></li>
                 
                
@@ -30,14 +28,14 @@
                 <h3>•Quem somos?</h3>
                     <p>A ElitSeg Corretora de Seguros tem satisfeito com sucesso as necessidades dos clientes desde 1991. Nós trabalhamos com você para criar soluções personalizadas. Nossa equipe está aqui para ajudar você a contratar o seguro que melhor te atenda de acordo com a sua necessidade.</p>
                 <h3>•Missão</h3>
-                    <p>Nossa missão é proporcionar estabilidade diante dos imprevistos e conduzirmos a solução.</p>
+                    <p>Nossa missão é proporcionar estabilidade diante dos imprevistos e conduzirmos à solução.</p>
                 <h3>•Visão</h3>
                     <p>Nossa visão é ser uma empresa reconhecida por sua excelência e honestidade.</p>
                 <h3>•Valores</h3>
                     <p>Nossos valores é te impactar de maneira positiva através de um atendimento personalizado valorizando um melhor custo benefício na aquisição do seu seguro.</p>
                       
                     <div>
-                        <img src="crescimento.png">
+                        <img src="{{url_for('static', filename='images/crescimento.png')}}">
                     </div>
 
                     <p><br>Estamos em constante crescimento no mercado, em breve iremos assegurar residencias, máquinas, etc..</p>
