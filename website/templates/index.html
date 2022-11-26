@@ -2,12 +2,13 @@
 
 <html lang="pt-br">
 	<head>
-    		<meta http-equiv="content-type" charset="utf-8"/>
-        	<title>ELITSEG</title>
-        	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/demo.css')}}"/>
-         	<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.2.6.js')}}"></script>
-			<script type="text/javascript" src="{{url_for('static', filename='js/coin-slider.min.js')}}"></script>
-			<link rel="stylesheet" href="{{url_for('static', filename='css/coin-slider-styles.css')}}" type="text/css" />
+		<meta http-equiv="content-type" charset="utf-8"/>
+		<title>ELITSEG</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/demo.css')}}"/>
+		<link rel="shortcut icon" href="{{url_for('static', filename='/images/fav/favicon.io')}}" type="image/x-icon">
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.2.6.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/coin-slider.min.js')}}"></script>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/coin-slider-styles.css')}}" type="text/css" />
     </head>
 <body>
     <div id="interface">
@@ -21,9 +22,7 @@
         	<ul>
             	<li><p><a href="/">Home</a></p></li>
                 <li><p><a href="/cotacao">Cotação</a></p></li>
-                <li><p><a href="/quemsomos">Quem somos</a></p>
-                </li>
-				<li><p><input type="search"></a> Busca</p></li>
+                <li><p><a href="/quemsomos">Quem somos</a></p></li>
 
 
             </ul>
@@ -33,12 +32,12 @@
          	<section id="conteudo">
 
             	<div id='coin-slider'>
-					<a href="/index.html" target="_blank" rel="next"></a>
+					<a href="/" target="_blank" rel="next"></a>
 					<img src="{{ url_for('static',filename='images/cotacao.png')}}" alt="Imagem da cotação">
 
     			</a>
 
-             <a href="cotacao.html" target="_blank" rel="next">
+             <a href="/cotacao.html" target="_blank" rel="next">
 				<img src="{{ url_for('static',filename='images/cot2.png')}}" alt="Imagem da segunda logo">
        		<span>
             	<b>Faça sua cotação</b>
